@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Lap11 13-2 EchoClient"

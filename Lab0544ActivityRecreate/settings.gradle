@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Lab05 4-4 ActivityRecreate"

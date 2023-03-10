@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Turtle</string>
+    <string name="top_name">목이 거북해</string>
+    <string name="text_login">로그인</string>
+</resources>

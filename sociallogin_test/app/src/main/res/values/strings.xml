@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">social login_test</string>
+    <string name="social_login">Social Login</string>
+    <!--네이버 로그인-->
+    <string name="naver_client_id">ycQZY5NpAG_fHGPFA0fw</string>
+    <string name="naver_client_secret">k9ORrPHoNE</string>
+    <string name="naver_client_name">목이 거북해</string>
+
+    <!--페이스북 앱 키-->
+    <string name="facebook_app_id">984958275686379</string>
+</resources>

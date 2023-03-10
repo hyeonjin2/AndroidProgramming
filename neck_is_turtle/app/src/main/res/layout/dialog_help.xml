@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_backgound"
+    android:gravity="center_horizontal"
+    android:elevation="4dp"
+    android:minWidth="350dp"
+    android:minHeight="460dp"
+    android:paddingStart="30dp"
+    android:paddingTop="25dp"
+    android:paddingEnd="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="목이 거북해와 함께해요!"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="바른 자세 챌린지"/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="1. 휴대폰을 평평한 바닥에 내려둔다."/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="2. 설정을 통해 원하는 챌린지 시간을 정한다."/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="3. 시작버튼을 누른다."/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="4. 바른자세로 휴대폰을 사용한다."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="자세 등록하기"/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="1. 세로십자선에 어깨중심을 맞추고 선다."/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="2. 촬영버튼을 누른다."/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="3. 다시찍고 싶을 경우 다시찍기를 눌러 다시 촬영한다."/>
+    <com.example.neck_is_turtle.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="4. 사진 올리기버튼으로 사진을 기록한다."/>
+
+    <Button
+        android:id="@+id/btn_help_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_login"
+        android:textColor="#FFFFFF"
+        android:text="확인"
+        android:textSize="24dp"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Lab10 10-2 BoundService"

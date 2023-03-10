@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_backgound"
+    android:gravity="center_horizontal"
+    android:elevation="4dp"
+    android:minWidth="350dp"
+    android:minHeight="340dp"
+    android:paddingStart="30dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="20dp">
+
+    <!--뒤로가기 X 버튼-->
+    <Button
+        android:id="@+id/btn_c_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_path"
+        android:onClick="mOnClick"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="바른 자세 챌린지\n시간 설정"
+            android:textColor="#000"
+            android:textSize="24sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="145dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rect_time" />
+            <TimePicker
+                android:id="@+id/set_time"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
+                android:theme="@style/cTimePicker"
+                android:timePickerMode="spinner"/>
+        </FrameLayout>
+        <Button
+            android:id="@+id/set_challenge_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_login"
+            android:textColor="#fff"
+            android:text="확인"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

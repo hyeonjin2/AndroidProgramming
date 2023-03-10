@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--상단 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#29E1C0"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <!--버튼들-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="30dp"
+            android:paddingTop="35dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <!--알람 버튼-->
+            <ImageButton
+                android:id="@+id/btn_alert"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/clock" />
+
+            <!--좋아요 버튼-->
+            <ImageButton
+                android:id="@+id/btn_like"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:background="@drawable/heart_fill" />
+
+            <!--환경설정 버튼-->
+            <ImageButton
+                android:id="@+id/btn_setting"
+                android:layout_marginStart="10dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/settings" />
+        </LinearLayout>
+
+        <!--날짜 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_yesterday"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/caret_left"/>
+
+            <TextView
+                android:id="@+id/tv_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:textSize="26dp"
+                android:textColor="#000"
+                android:text="토요일" />
+
+            <ImageButton
+                android:id="@+id/btn_tomorrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/caret_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--하단 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Daily Schedule"
+            android:textColor="#07586C"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/lay_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <!--스트레칭 알람이 없을 때 -->
+            <LinearLayout
+                android:id="@+id/layout_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rect_empty"
+                android:padding="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:text="앗 아직 스케쥴이 없네요!" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:text="스트레칭 알람을 추가해주세요!" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_plus"
+                    android:text="추가하러 가기"
+                    android:textSize="18dp"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Daily Mission"
+            android:textColor="#07586C"
+            android:textSize="20dp" />
+
+        <!--daily mission들-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <!--Mission 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="10dp"
+                android:paddingStart="20dp"
+                android:background="@drawable/rect_daily"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#29E1C0"
+                    android:textSize="18sp"
+                    android:text="스트레칭 하기" />
+
+                <TextView
+                    android:id="@+id/mission1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:text="목 스트레칭을 1분간 함께 해봐요!" />
+            </LinearLayout>
+
+            <!--Mission 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingStart="20dp"
+                android:background="@drawable/rect_daily"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#29E1C0"
+                    android:textSize="18dp"
+                    android:text="측면사진 기록 남기기" />
+
+                <TextView
+                    android:id="@+id/mission2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:text="아직 측면사진 기록을 남기지 않으셨네요!" />
+            </LinearLayout>
+
+            <!--Mission 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingStart="20dp"
+                android:background="@drawable/rect_daily"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#29E1C0"
+                    android:textSize="18dp"
+                    android:text="바른 자세 챌린지" />
+
+                <TextView
+                    android:id="@+id/mission3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:text="추후 구현할 예정입니다." />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--하단 메뉴바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_shadow"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/circle_click"/>
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:translationY="-5dp"
+                    android:background="@drawable/test_shadow2"/>
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/circle_click"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_graph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bar_chart" />
+
+                <ImageButton
+                    android:id="@+id/btn_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/btn_stretching"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/stretching_exercises" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

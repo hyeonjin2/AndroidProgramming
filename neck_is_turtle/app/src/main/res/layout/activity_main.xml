@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--상단 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#29E1C0"
+        android:orientation="vertical">
+
+        <!--버튼들-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="30dp"
+            android:paddingTop="35dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <!--알람 버튼-->
+            <ImageButton
+                android:id="@+id/show_alerts"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/clock" />
+
+            <!--좋아요 버튼-->
+            <ImageButton
+                android:id="@+id/show_like"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:background="@drawable/heart_fill" />
+
+            <!--환경설정 버튼-->
+            <ImageButton
+                android:id="@+id/btn_help"
+                android:layout_marginStart="10dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/help" />
+        </LinearLayout>
+    </LinearLayout>
+        <!--tab 내용 들어갈 레이아웃-->
+    <!--하단 메뉴 tab버튼-->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_shadow"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:orientation="horizontal">
+                <View
+                    android:id="@+id/v_graph"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:translationY="-5dp"
+                    android:background="@drawable/test_shadow2"/>
+                <View
+                    android:id="@+id/v_home"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:translationY="-5dp"
+                    android:background="@drawable/test_shadow2"/>
+                <View
+                    android:id="@+id/v_stretching"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:translationY="-5dp"
+                    android:background="@drawable/test_shadow2"/>
+            </LinearLayout>
+            <!--tab레이아웃-->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#00000000"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:tabRippleColor="#00000000">
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.tabs.TabLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

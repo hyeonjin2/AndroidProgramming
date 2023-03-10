@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".StretchingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--스트레칭 부위 버튼들-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_selected_background"
+                android:textColor="@drawable/btn_selected_textcolor"
+                android:textSize="16dp"
+                android:text="어깨 통증" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btn_selected_background"
+                android:textColor="@drawable/btn_selected_textcolor"
+                android:textSize="16dp"
+                android:text="목 통증" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btn_selected_background"
+                android:textColor="@drawable/btn_selected_textcolor"
+                android:textSize="16dp"
+                android:text="누워서" />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btn_selected_background"
+                android:textColor="@drawable/btn_selected_textcolor"
+                android:textSize="16dp"
+                android:text="앉아서" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_video1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:dividerHeight="15dp"
+            android:divider="#00000000"
+            android:scrollbarThumbVertical="@color/color_scroll" />
+    </LinearLayout>
+</FrameLayout>

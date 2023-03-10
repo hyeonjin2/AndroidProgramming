@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="부트 완료(ACTION_BOOT_CONPLIETED,
+            \n사용자 존재(ACTION_USER_PRESENT),
+            \n헤드셋 플러그(ACTION_HEADSET_PLUG)
+            \n이벤트를 감지합니다."
+        android:textSize="16dp"
+        android:textStyle="bold|italic"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
